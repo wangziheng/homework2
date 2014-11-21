@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html >
+<head>
+   <meta charset="UTF-8">
+   <title>233 网校登录</title>
+   <style>
+   .top-nav-wrap{
+      position: relative;
+      z-index: 15;
+      min-width: 1000px;
+      height: 75px;
+      background:#fff;
+      margin: 0px;
+      padding: 0px;
+      display: block;
+   }
+   .tn-header {
+      margin: 0px;
+
+      width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0px;
+      display: block;
+   }
+   .tn-nav{
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      display: block; 
+   }
+   .tn-logo {
+
+      float: left;
+      padding-top: 17px;
+      margin: 0px;
+      padding: 0px;
+      display: block;
+   }
+   .tn-title {
+      float: left;
+      position: relative;
+      display: inline;
+      font-size: 16px;
+      border-left: #f5f5f5 solid 1px;
+      border-right: #f5f5f5 solid 1px;
+      margin-right: -1px;
+   }
+   .ui-check-kc{
+      width: auto;
+      color: #333;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      z-index: 9999;
+      padding: 0 15px 3px 12px;
+      line-height: 68px;
+      border-top: 4px solid #fff
+   }
+   .em {
+      float: left;
+      display: inline;
+      margin-top: 24px;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      margin-right: 6px;
+      background-image: url(images/ico1.png);
+      background-repeat: no-repeat;
+      font-style: normal;
+      font-weight: normal;
+   }
+   .video{
+      background-position: 0px 0px;
+   }
+   .tiku{
+      background-position: 0 -27px;
+   }
+   .download{background-position: -35px -54px;
+   }
+   .group{background-position: -35px -81px;
+   }
+   .icon-xiaoxue{float: left;
+      background-position: -35px -135px;}
+      .tn-title-login{
+         margin: 0PX;
+         padding: 0PX;
+         border: 0PX;
+         display: block;
+         float: right;
+      }
+      .wrap{
+         position: relative;
+         margin: 0px;
+         padding: 0px;
+         z-index: 0;
+         height: 600px;
+         clear: both;
+         width: 100%;
+         z-index: 2;
+         display: block;
+        
+      }
+      .banner-show .cell {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+overflow: hidden;
+background-repeat: repeat-x;
+background-position: center top;
+}
+
+.con {
+position: relative;
+width: 1000px;
+margin: 0 auto;
+height: 600px;
+background-repeat: no-repeat;
+background-position: left top;
+background: url(images/banner2.png);
+}
+      .container {
+         position: relative;
+         z-index: 2;
+         width: 1000px;
+         height: 0;
+         margin: auto;
+         padding: 0px;
+         display: block;
+      }
+      .denglu {
+         background: url(images/ico1.png) no-repeat -85px -89px;
+         padding-left: 20px;
+      }
+      .tn-person-r{
+         margin-top: 10px;
+         float: right;
+         display: inline;
+         position: relative;
+      }
+      .unLogin{
+         text-align: center;
+         margin: 0px;
+         padding: 0px;}
+         .page-head-register{
+            color: #333;
+            font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+            text-decoration: none;
+            padding: 0 5px;}
+            .qt-login {
+               position: absolute;
+               clear: both;
+               left: 96px;
+               top: 26px;
+               width: 70px;
+               display: block;
+               margin: 0px;
+               padding: 0px;
+            }
+            .weibo_denglu {
+               width: 22px;
+               height: 22px;
+               line-height: 22px;
+               font-size: 12px;
+               background: #333 url(images/ico1.png) no-repeat -78px -160px;
+               background-position: -78px -185px;
+               float: left;
+               display: inline;
+               margin-left: 7px;
+               text-indent: -9999px;
+               opacity: 0.7;
+               padding: 0px;
+            } 
+            .QQ_denglu{
+               width: 22px;
+               height: 22px;
+               line-height: 22px;
+               font-size: 12px;
+               background: #333 url(images/ico1.png) no-repeat -78px -160px;
+               float: left;
+               display: inline;
+               margin-left: 7px;
+               text-indent: -9999px;
+               opacity: 0.7;
+               padding: 0px;
+            }
+            .login-box{
+               position: absolute;
+               top: 56px;
+               right: 30px;
+               width: 326px;
+               height: 416px;
+               padding: 26px 35px 26px 35px;
+               background: white;
+               border-radius: 3px;
+               background: rgba(255, 255, 255, 0.95);
+               border: 1px solid #dfdfdf;
+               border-top: 0px solid #ff4200;
+               box-shadow: 3px 3px 0px #ede
+            }
+
+            .Login-title {
+               position: relative;
+               width: 100%;
+               height: 30px;
+               padding-bottom: 17px;
+               display:block;
+               margin: 0px;
+               border: 0px;
+            }
+
+            .h2 {
+               display: block;
+               font-size: 1.5em;
+               webkit-margin-before: 0.83em;
+               webkit-margin-after: 0.83em;
+               -webkit-margin-start: 0px;
+               -webkit-margin-end: 0px;
+               font-weight: bold;
+            }
+            .Login-form{
+               position: relative;
+               width: 100%;
+               margin: 0px;
+               padding: 0px;
+               display: block;
+            }
+            .form{margin: 0px;
+               padding: 0px;
+            }
+            .Form{
+               display:block;
+            }
+            .Login-form .cell {
+               position: relative;
+               height: 50px;
+               margin-bottom: 18px;
+               zoom: 1;
+               margin: 0px;
+               padding: 0px;
+            }
+            .label {
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 1;
+               padding: 0 12px;
+               font: normal 14px/48px "Microsoft YaHei";
+               color: #6b6b6b;
+               cursor: text;
+            }
+            input[type=text], .Form input[type=password], .Form textarea {
+               position: relative;
+               z-index: 3;
+               display: block;
+               width: 97%;
+               padding-left: 10px;
+               background: transparent;
+               border: 1px solid #cececf;
+            }
+            .input{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 99.5%;
+               height: 48px;
+               line-height: 48px;
+               font-size: 16px;
+               background: #fff;
+               border: 1px solid #cececf;
+               box-shadow: inset 0px 2px rgba(100,100,100,.10);
+            }
+
+            .Login-form .cell1 {
+               height: 16px;
+               margin-top: -5px;
+               position: relative;
+               margin-bottom: 18px;
+               zoom: 1
+            }
+            .next {
+               width: 140px;
+               margin-left: 10px;
+               font-size: 12px;
+            }
+            .f-fr {
+               float: right;
+               display: inline;
+            }
+            .bottom{
+               width: 100%;
+               height: 60px;
+               margin: 0px;
+               border: 0px;
+            }
+            .button {
+               display: block;
+               border-radius: 3px;
+               position: relative;
+               width: 100%;
+               background: #ff840a;
+               text-align: center;
+               line-height: 48px;
+               color: #fff;
+            }
+            .Login-form .cell2 {
+               height: 40px;
+               line-height: 40px;
+               text-align: right;
+               border-bottom: 1px solid #e6e6e6;
+               padding-bottom: 0px;
+               color: #6d6d6d;
+            }
+            .f-fr {
+               display: inline;
+               line-height: 40px;
+               float: right;
+               font-size: 13px;
+            }
+            .ms-btn{
+               padding: 2px 8px;
+               border: 1px solid #ddd;
+               height: 20px;
+               line-height: 20px;
+               display: inline-block;
+               background: #f4f4f4;
+               color: #6d6d6d;
+               margin-top: 6px;
+               margin-left: 10px;
+               border-radius: 3px;
+            }
+            .qit {
+               float: left;
+               display: inline;
+               font-size: 12px;
+               line-height: 14px;
+               text-align: left;
+               padding: 0px;
+               width: 100%;
+            }
+            .qita {
+               position: relative;
+               width: 100%;
+               margin-top: 0px;
+               margin: 0px;
+               padding: 0px;
+            }
+            .weibo {
+               float: left;
+               display: inline-block;
+               width: 155px;
+               height: 38px;
+               text-align: left;
+               border-radius: 30px;
+               background: #ff6b5c;
+               font-size: 12px;
+               line-height: 38px;
+               color: #fff;
+               margin-right: 15px;
+               margin-top: 20px;
+            }
+            .qq {
+               margin-right: 0px;
+               background-color: #75acd9;
+               float: left;
+               display: inline-block;
+               width: 155px;
+               height: 38px;
+               text-align: left;
+               border-radius: 30px;
+               background: #ff6b5c;
+               font-size: 12px;
+               line-height: 38px;
+               color: #fff;
+               margin-right: 0px;
+               margin-top: 20px;
+            }
+            .icon-wb{
+               float: left;
+               display: inline-block;
+               width: 26px;
+               height: 26px;
+               font: normal 12px/26px Arial;
+               margin-left: 30px;
+               margin-top: 7px;
+               margin-right: 5px;
+            }
+            .icon-qq{
+               float: left;
+               display: inline-block;
+               width: 26px;
+               height: 26px;
+               font: normal 12px/26px Arial;
+               margin-left: 30px;
+               margin-top: 7px;
+               margin-right: 5px;
+            }
+            #footer {
+               clear: both;
+               font: 12px/24px Arial !important;
+               margin: 0px auto;
+               width: 100%;
+               color: #333;
+               text-align: center;
+               padding-top: 0px;
+               text-decoration: none;
+               padding-bottom: 60px;
+               background: #fff;
+            }
+            .a2 {
+               min-width: 1000px;
+               margin: 0px auto;
+               border-top: 1px solid #eee;
+               text-align: center;
+               color: #666;
+               font: 12px/24px Arial !important;
+               word-spacing: 6px;
+               padding-top: 30px;
+               background: #fff;
+            }
+            </style>
+         </head>
+
+
+
+
+         <body>
+            <div class="top-nav-wrap"> 
+               <div class="tn-header"> 
+                  <div class="tn-nav">
+                     <div class="tn-logo"> <a href="http://wx.233.com"><img src="images/logo.png"></a> </div> 
+                     <div class="tn-title {course}"> <a href="http://wx.233.com/course/List/"  class=" ui-check-kc"><em class="video"></em>课程</a></div> 
+                     <div class="tn-title {tiku}"> <a href="http://wx.233.com/tiku"  class=" ui-check-kc"><em class="tiku"></em>题库</a></div>
+                     <div class="tn-title {share}"><a href="/share" class="ui-check-kc"><em class="download"></em>资料分享</a></div>
+                     <div class="tn-title {quan}"><a href="http://wx.233.com/quan" class="ui-check-kc"><em class="group"></em>小组</a></div>
+                     <div class="tn-title"><a href="http://a.233.com/" target="_blank" class="ui-check-kc"><em class="icon-xiaoxue"></em>233小学</a></div>
+                  </div>
+
+
+
+                  <div class="tn-person-r">
+                    <div class="tn-title-login">
+                       <div id="unLogin">
+                         <a href="javascript:void(0)" class="denglu page-head-login">登陆</a>|<a href="javascript:void(0)" class="page-head-register">注册</a>
+                         <div class="qt-login"><a href="javascript:void(0)" id="qq_login_btn" class="weibo_denglu">QQ</a> <a href="javascript:void(0)" id="sina_login_btn" class="QQ_denglu">weibo</a></div>
+                      </div>
+                   </div>    
+                </div>
+
+             </div>
+          </div>
+
+
+
+          <div class="wrap">
+            <div class="con">
+           <div class="container">
+            <div class="login-box">
+               <h2 class="login-title"> 登陆233网校</h2>
+               <div class="Login-form">
+                  <Form class="form">
+                     <div class="cell">
+                        <!--<label for="mobile_ipt" style="display:block;">输入手机号/邮箱/用户名</label>-->
+                        <input type="text" name="mobile" id="js-mobile_ipt" class="text">
+                     </div>
+                     <div class="cell">
+                      <!-- <label for="mobile_ipt" >输入密码</label>-->
+                      <input type="password" name="passwd" id="js-mobile_ipt" class="text">
+                   </div>
+                   <div class="cell cell1">
+                     <input type="checkbox" checked="true" id="js-mail_chk" name="js-mail_chk" class="qiek">
+                     <label class="next">下次自动登录</label>
+                     <a href="/account/resetpwd/" class="f-fr">忘记密码？</a>
+                  </div> 
+                  <div class="cell cell1">
+                     <font style="font-size: 12px; color: #999">试用帐号:love233com 密码:123456</font>
+                  </div>
+                  <div class="bottom"><a id="js-mobile_btn" going="0"    class="button">登&nbsp;&nbsp;录</a></div>
+               </Form>
+               <div class="cell cell2">
+                  <a href="/account/register/" class="f-fr ms-btn">马上注册</a>
+                  <span class="f-fr">还没有233网校账号？</span>
+               </div>
+               <div class="qita">
+                <span class="qit">使用其他账户登录</span>
+                <a href="javascript:;" class="weibo" id="sina_login_btn"><em class="icon-wb"></em>微博登录</a>
+                <a href="javascript:;" class="qq" id="qq_login_btn"><em class="icon-qq"></em>QQ登录</a>
+             </div>
+           </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div id="footer">
+   <div class="a2">
+    <a href="http://www.233.com/about/aboutus.html" target="_blank">关于我们</a> ┊ <a href="http://www.233.com/about/examda_pay.html" target="_blank">付款方式</a> ┊ <a href="/aboutus/hezuo.html" target="_blank">合作推广</a> ┊ <a href="/aboutus/hzhb.html" target="_blank">合作伙伴</a> ┊ <a href="http://www.233.com/about/jm.html" target="_blank">联系我们</a> ┊ <a href="http://www.233.com/about/jshz.html" target="_blank">教师合作</a> ┊ <a href="/aboutus/map.html" target="_blank">网站地图</a> ┊ <a href="/aboutus/shengming.html" target="_blank">网站声明</a> ┊ <a href="/aboutus/link.html" target="_blank">友情链接</a> ┊ <a href="http://www.233.com/help/" target="_blank">帮助中心</a><br>
+    <span>版权所有 © 2014 长沙二三三网络科技有限公司</span>&nbsp;&nbsp;增值电信业务经营许可证：湘B2-20090096 <br>
+    服务时间：周一至周日 8:00-22:30  法定节假日：8:00-17:30 统一客服热线：<strong class="cDRed">4000-800-233</strong><br>
+ </div>
+</div>
+</body>
+</html>
